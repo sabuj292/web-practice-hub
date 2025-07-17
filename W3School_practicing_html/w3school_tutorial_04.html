@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w3school section 4</title>
+    <style>
+        .table1 {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            border-radius: 2px;
+            width: 100%;
+        }
+    
+        .table1 tr,
+        .table1 th {
+            border: 2px solid #eebebe;
+            border-radius: 2px;
+            text-align: left;
+            padding: 8px;
+        }
+    
+        .table1 tr:nth-child(even) {
+            background-color: #eebebe;
+        }
+    
+        .table2,
+        .table2 th,
+        .table2 td {
+            border: 1px dotted black;
+            border-radius: 10px;
+        }
+    
+        .table2 {
+            font-size: 14px;
+        }
+    
+        .table2 th,
+        .table2 td {
+            background-color: turquoise;
+            text-align: center;
+            padding: 4px 6px;
+        }
+    
+        .table3,
+        .table3 th,
+        .table3 td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .table4,
+        .table4 th, 
+        .table4 td {
+            border: 1px solid slateblue;
+            border-collapse: collapse;
+        }
+
+        .table4 th,
+        .table4 td {
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 40px;
+        }
+
+        .table4 tr:hover{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- html table -->
+
+    <h2>HTML Table</h2>
+    <table class="table1">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds</td>
+            <td>Maria</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro</td>
+            <td>Francisco</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst</td>
+            <td>Roland</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island</td>
+            <td>Helen</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Laughing</td>
+            <td>Yoshi</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>magaa</td>
+            <td>Giovanni</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+
+
+    <h1>Table with Rounded Borders</h1>
+
+    <p>Use the CSS border-radius property to add rounded corners to the borders.</p>
+<table class="table2" style="width:100%">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+    </tr>
+</table>
+
+<h1>Table-03 setting customized width fo the coloum</h1>
+
+<h2>Set the first column to 70% of the table width</h2>
+
+<table class ="table3" style="width:100%">
+    <tr>
+        <th style="width:45%">Firstname</th>
+        <th style="width: 40%">Lastname</th>
+        <th style="width: 15%">Age</th>
+    </tr>
+    <tr style="height: 200px;">
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+    </tr>
+</table>
+
+
+<!-- cellpadding and cellspacing -->
+<h1>cellpadding - top - bottom - left- right</h1>
+<p>We can specify different padding for all fours sides of the cell content.</p>
+
+<table class="table4" style="width:100%">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+    </tr>
+</table>
+
+
+</body>
+</html>
