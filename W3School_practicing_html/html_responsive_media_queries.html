@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive website Media Queries</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .left {
+            background-color: aqua;
+            padding: 20px;
+            width: 20%;
+            float: left;
+        }
+
+        .main {
+            background-color: rgb(124, 238, 175);
+            padding: 20px;
+            width: 60%;
+            float: left;
+
+        }
+
+        .right {
+            background-color: blueviolet;
+            padding: 20px;
+            width: 20%;
+            float: left;
+
+        }
+        /* using media query to add a break point at 800px */
+        @media screen and (max-width: 800px){
+            .left, .main, .right {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>Media Queries</h2>
+    <p>
+        Resize the browser window.
+    </p>
+    <div class="left">
+        <p>Left Menu</p>
+    </div>
+    <div class="main">
+        <p>Main Content</p>
+    </div>
+    <div class="right">
+        <p>Right Content</p>
+    </div>
+</body>
+
+</html>
